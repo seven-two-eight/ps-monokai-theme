@@ -8,3 +8,13 @@ function prompt {
 
 $Host.PrivateData.DebugBackgroundColor = "DarkGray"
 $Host.PrivateData.ErrorBackgroundColor = "DarkGray"
+
+Set-PSReadlineOption -TokenKind Command   -ForegroundColor White
+Set-PSReadlineOption -TokenKind Keyword   -ForegroundColor DarkYellow
+Set-PSReadlineOption -TokenKind Member    -ForegroundColor White
+Set-PSReadlineOption -TokenKind Number    -ForegroundColor White
+Set-PSReadlineOption -TokenKind Operator  -ForegroundColor White
+Set-PSReadlineOption -TokenKind Parameter -ForegroundColor DarkCyan
+Set-PSReadlineOption -TokenKind String    -ForegroundColor DarkYellow
+Set-PSReadlineOption -TokenKind Type      -ForegroundColor DarkCyan
+Set-PSReadlineOption -TokenKind Variable  -ForegroundColor White
