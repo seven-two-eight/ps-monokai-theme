@@ -13,14 +13,14 @@ $Host.PrivateData.ErrorBackgroundColor = "DarkGray"
 $promptColors = @{
     'Command' = 'White'
     'Comment' = 'DarkGreen'
-    'Keyword' = 'DarkCyan'
+    'Keyword' = 'Blue'
     'Member' = 'Cyan'
     'Number' = 'Yellow'
     'Operator' = 'Magenta'
     'Parameter' = 'Cyan'
     'String' = 'Yellow'
     'Type' = 'Green'
-    'Variable' = 'DarkCyan'
+    'Variable' = 'White'
 }
 if((Get-Module -Name "PSReadline").Version -gt 1.0.0) {
     Set-PSReadLineOption -Colors $promptColors
