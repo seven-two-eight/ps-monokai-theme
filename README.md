@@ -6,8 +6,7 @@
 * Clone or [download](https://github.com/seven-two-eight/ps-monokai-theme/zipball/master) the git repo
     ```
     git clone https://github.com/seven-two-eight/ps-monokai-theme.git
-    ```
-    
+    ```    
 
 * Run `install.ps1` with administrator privilege from the repo folder to import registry and PowerShell profile.
 

@@ -1,7 +1,7 @@
 # copy below to $HOME\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1
 
 function prompt {
-    Write-Host -ForegroundColor Green "$(Get-Location)"
+    Write-Host -ForegroundColor Green (Get-Location).Path.Replace($HOME, "~")
     Write-Host -nonewline -ForegroundColor Gray "λ" 
     " "
 }
