@@ -13,12 +13,7 @@ If ($Proc.ExitCode -ne 0) {
 }
 
 $src = "Microsoft.PowerShell_profile.ps1"
-$des = "$HOME\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1"
-If (Test-Path $des) {
-    "Existing PowerShell profile detected."
-    Copy-Item -Path $src -Destination $des -Confirm
-} Else {
-    Copy-Item -Path $src -Destination $des
-}
+$des = "$PROFILE.CurrenUserCurrentHost"
+Get-Content -Path $src -Raw | Add-Content -Path $des -Confirm:$false
 
 "Finished."
